@@ -11,39 +11,53 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Joti+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- navbar -->
-    <div class="navbar">
-      <div class="me">
-        <p><b>Muy Heang</b></p>
-        <p style="color: orangered; font-size: 24px; font-weight: bolder">|</p>
-        <p>Soft.Engineer</p>
-      </div>
-      <div class="nav-link">
-        <ul>
-          <li>Home</li>
-          <li>Skills</li>
-          <li>Projects</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-      </div>
-    </div>
-    <!-- hero-section -->
-    <div class="hero">
-      <div class="dark-mode">
-        <i class="fa-solid fa-circle-half-stroke"></i>
-      </div>
-      <div class="my-cv">
-        <div class="myself">
-          <p>Hi! I'm Muy Heang Te</p>
-          <p>Soft. Engineer</p>
-          <p>I love coding and learn tech skills</p>
+    <!-- dark mode toggler -->
+    <input type="checkbox" id="darkMode" style="display: none" />
+    <div class="wrapper">
+      <label for="darkMode">
+        <i class="fa-solid fa-circle-half-stroke"></i
+      ></label>
+
+      <!-- navbar -->
+      <div class="navbar">
+        <div class="me joti-one-regular">
+          <p><b>Muy Heang</b></p>
+          <p style="color: orangered; font-size: 24px; font-weight: bolder">
+            |
+          </p>
+          <p>Soft.Engineer</p>
         </div>
-        <div class="my-img">
-          <img src="./assets/myphoto.png" alt="" />
+        <div class="nav-link">
+          <ul>
+            <li>Home</li>
+            <li>Skills</li>
+            <li>Projects</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+      <!-- hero-section -->
+      <div class="hero">
+        <div class="my-cv">
+          <div class="myself">
+            <p>Hi! I'm Muy Heang Te</p>
+            <p>Soft. Engineer</p>
+            <p>I love coding and learn tech skills</p>
+          </div>
+          <div class="my-img">
+            <img src="./assets/myphoto.png" alt="" />
+          </div>
         </div>
       </div>
     </div>
