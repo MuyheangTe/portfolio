@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+}
+
+/* nav-bar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: skyblue;
+  box-shadow: 0px 0px 10px 7px #88888885;
+}
+.me {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav-link ul li {
+  list-style-type: none;
+}
+.nav-link ul {
+  display: flex;
+  gap: 10px;
+  font-weight: bold;
+}
+/* hero-section */
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.dark-mode {
+  position: absolute;
+  left: 4%;
+  top: 1.5rem;
+}
+.dark-mode i:hover {
+  cursor: pointer;
+}
+.my-cv {
+  margin: 15%;
+  width: 70%;
+  background: orangered;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+}
