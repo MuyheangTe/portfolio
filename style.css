@@ -1,9 +1,15 @@
 body {
   margin: 0;
 }
+.container {
+  width: 80%;
+  margin: auto;
+}
 :root {
   --dark-text-color: white;
   --dark-bg: rgb(3, 2, 2);
+  --border-color: rgb(3, 2, 2);
+  --dark-border: white;
 }
 .wrapper {
   background: rgb(208, 238, 250);
@@ -37,11 +43,7 @@ body {
   font-weight: bold;
 }
 /* hero-section */
-.hero {
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
+
 [for="darkMode"] {
   position: absolute;
   top: 7rem;
@@ -56,13 +58,16 @@ body {
 }
 /* hero section */
 .hero {
-  margin: 15%;
+  margin: 7rem auto;
   width: 70%;
   height: 9rem;
   background: orangered;
   grid-template-areas: "left right";
   padding: 3rem;
   align-items: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .download-cv button {
@@ -88,9 +93,49 @@ body {
   margin-top: -7rem;
   width: 142%;
 }
-
+/* banner section */
+.flex-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+}
+.banner {
+  border: 2px solid var(--border-color);
+  border-radius: 2rem;
+  padding: 2rem;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.info-divider {
+  width: 2px;
+  height: 4rem;
+  background: grey;
+}
+.flex-content .icon-container {
+  background: orangered;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  font-size: 18px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-content p {
+  color: orangered;
+}
+.flex-content div span {
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  font-weight: bolder;
+}
 /* applying dark mode */
 #darkMode:checked + .wrapper {
   background-color: var(--dark-bg);
   color: var(--dark-text-color);
+  --border-color: var(--dark-border);
 }
