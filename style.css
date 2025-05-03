@@ -10,6 +10,7 @@ body {
   --dark-bg: rgb(3, 2, 2);
   --border-color: rgb(3, 2, 2);
   --dark-border: white;
+  --shadow: 4px -2px 40px 9px rgba(128, 128, 128, 0.464);
 }
 .wrapper {
   background: rgb(208, 238, 250);
@@ -58,7 +59,8 @@ body {
 }
 /* hero section */
 .grid {
-  grid-template-areas: "left right";
+  display: grid;
+  gap: 1rem;
 }
 .hero {
   margin: 7rem auto;
@@ -143,6 +145,7 @@ body {
 .skills h2 {
   display: flex;
   justify-content: center;
+  text-decoration: underline orangered;
 }
 .skills-container {
   display: flex;
@@ -158,6 +161,26 @@ body {
 .skills-container div span {
   font-size: 11px;
 }
+/* project section */
+.projects h2 {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline orangered;
+}
+.projects .project-container {
+  grid-template-columns: repeat(2, 1fr);
+}
+.project-card {
+  box-shadow: var(--shadow);
+  border-radius: 5px;
+  padding-bottom: 3rem;
+}
+.project-card .links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
 /* applying dark mode */
 #darkMode:checked + .wrapper {
   background-color: var(--dark-bg);
